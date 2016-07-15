@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/text_margin"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="滚动的 TextView ^ ^
+            abcdefghijklmnopqrstuvwxyz
+            1234567890
+            one two three four five six seven eight nine ten
+            "/>
+
+        <include layout="@layout/lay_divider"/>
+
+        <TextView
+            android:id="@+id/selfAnimation_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_margin"
+            android:text="View 自身动画"/>
+
+        <include layout="@layout/lay_divider"/>
+
+        <TextView
+            android:id="@+id/path_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/text_margin"
+            android:text="抛物线"/>
+
+        <include layout="@layout/lay_divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:clickable="true"
+            android:padding="@dimen/text_margin"
+            android:text="水波效果"/>
+
+        <include layout="@layout/lay_divider"/>
+
+        <LinearLayout
+            android:id="@+id/sharedElements_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/text_margin">
+
+            <TextView
+                android:id="@+id/sharedElements_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/shared_elements"/>
+
+            <ImageView
+                android:id="@+id/sharedElements_iv"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_huoer"/>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/lay_divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
