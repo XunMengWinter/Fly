@@ -13,10 +13,8 @@ A set of simple animation. / 5个简单动效。
 
 ### 效果图
 
-[Fly (点击查看)](https://github.com/XunMengWinter/Fly)
-
 一如既往的霍尔首页^^：
-![fly.gif](http://upload-images.jianshu.io/upload_images/2066824-4e48afd6def85cac.gif?imageMogr2/auto-orient/strip)
+![fly.gif](https://raw.githubusercontent.com/XunMengWinter/source/master/gif/fly.gif)
 
 ### 要点讲解
 * 文字滚动：
